@@ -7,14 +7,14 @@
     <title>Login</title>
 </head>
 <body>
-<jsp:include page="_header.jsp"></jsp:include>
-<jsp:include page="_menu.jsp"></jsp:include>
+<%--<jsp:include page="_header.jsp"></jsp:include>--%>
+<%--<jsp:include page="_menu.jsp"></jsp:include>--%>
 
 <h3>Register Page</h3>
 <p style="color: red;">${errorString}</p>
 
 <a href="Login" style="display: block">Login?</a>
-<form method="POST" action="${pageContext.request.contextPath}/Register">
+<form method="POST" action="Register">
     <table>
         <tr>
             <td>User Name</td>

@@ -7,7 +7,7 @@
         <tr>
             <th>CategoryID</th>
             <th>Name</th>
-            <th>Action</th>
+            <th colspan="2">Action</th>
         </tr>
         <c:forEach items="${listCategory}" var="category">
             <tr>
@@ -27,3 +27,4 @@
         </c:forEach>
     </table>
 </div>
+
