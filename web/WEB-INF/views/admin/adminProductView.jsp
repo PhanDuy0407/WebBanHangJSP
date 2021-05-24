@@ -14,6 +14,40 @@
     <link rel="stylesheet"  href="/assets-admin/css/style.css">
 </head>
 <body class="overlay-scrollbar">
+<c:if test="${doCreateCategory}">
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <jsp:include page="_createCategory.jsp"></jsp:include>
+        </div>
+
+    </div>
+</c:if>
+<c:if test="${doUpdateCategory}">
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <jsp:include page="_updateCategory.jsp"></jsp:include>
+        </div>
+    </div>
+</c:if>
+<c:if test="${doCreateProduct}">
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <jsp:include page="_createProduct.jsp"></jsp:include>
+        </div>
+    </div>
+</c:if>
+<c:if test="${doUpdateProduct}">
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <jsp:include page="_updateProduct.jsp"></jsp:include>
+        </div>
+    </div>
+</c:if>
+<div id="admin-content">
     <!-- navbar -->
     <div class="navbar">
         <!-- nav left -->
@@ -48,8 +82,44 @@
             <jsp:include page="_listProductAdmin.jsp"></jsp:include>
         </div>
     </div>
+</div>
+<script src="/assets-admin/js/index.js"></script>
+<script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
 
-    <script src="/assets-admin/js/index.js"></script>
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            window.location.href = "/Admin";
+        }
+    }
+</script>
+<style>
+
+    /* The Modal (background) */
+    .modal {
+        display: block; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+
+    /* Modal Content */
+    .modal-content {
+        margin: auto;
+        padding: 20px;
+        width: 33.33%;
+    }
+
+</style>
 
 </body>
 </html>

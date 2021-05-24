@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 @WebServlet("/CreateProduct")
-public class CreateProductServlet extends HttpServlet {
+public class CreateProductServlet extends AdminProductServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -37,7 +37,7 @@ public class CreateProductServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        RequestDispatcher dispatcher = this.getServletContext().getRequestDispatcher("/WEB-INF/views/admin/createProduct.jsp");
-        dispatcher.forward(request, response);
+        request.setAttribute("doCreateProduct",true);
+        super.doGet(request,response);
     }
 }
