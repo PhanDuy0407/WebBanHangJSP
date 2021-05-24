@@ -1,6 +1,7 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-         pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+         pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 
 <%--<table border="1" cellpadding="5" cellspacing="1"--%>
 <%--       style="display: inline-block;">--%>
@@ -68,8 +69,12 @@
                             <td>${product.productID}</td>
                             <td>${product.name}</td>
                             <td><img src="${product.image }" alt="${product.name}" style="height: 100px;"></td>
-                            <td>${product.price}</td>
-                            <td>${product.sale }</td>
+                            <td>
+                                <fmt:formatNumber type="number" maxFractionDigits="0" value="${product.price}" />đ
+                            </td>
+                            <td>
+                                <fmt:formatNumber type="percent" value="${1 - product.sale}" />
+                            </td>
                             <td>${product.description }</td>
                             <td>${product.available }</td>
                             <td>
