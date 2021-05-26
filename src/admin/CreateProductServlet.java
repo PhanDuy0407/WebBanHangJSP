@@ -19,6 +19,7 @@ public class CreateProductServlet extends AdminProductServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        request.setCharacterEncoding("UTF-8");
         Connection conn = MyUtils.getStoredConnection(request);
 
         String id = request.getParameter("id");
@@ -31,6 +32,7 @@ public class CreateProductServlet extends AdminProductServlet {
         int categoryID = Integer.parseInt(request.getParameter("categoryID"));
 
         Product product = new Product(id,name,image,description,price,sale,available);
+        System.out.println("Alo"+name);
         DBUtils.insertProduct(conn,product,categoryID);
         response.sendRedirect("Admin");
     }
