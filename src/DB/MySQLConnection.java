@@ -1,9 +1,9 @@
-package DB;
+package db;
 
 import java.sql.*;
 
 public class MySQLConnection {
-    private static String DB_URL = "jdbc:mysql://localhost:3306/testdb";
+    private static String DB_URL = "jdbc:mysql://localhost:3306/db_selling_web?useUnicode=yes&characterEncoding=UTF-8";
     private static String USER_NAME = "root";
     private static String PASSWORD = "032020292";
 
@@ -25,16 +25,4 @@ public class MySQLConnection {
         return conn;
     }
 
-//    public static void main(String[] args) throws SQLException {
-//        Connection conn = getMySQLConnection();
-//        Statement stmt = conn.createStatement();
-//        // get data from table 'student'
-//        ResultSet rs = stmt.executeQuery("select * from category");
-//        // show data
-//        while (rs.next()) {
-//            System.out.println(rs.getInt(1) + "  " + rs.getString(2));
-//        }
-//        // close connection
-//        conn.close();
-//    }
 }

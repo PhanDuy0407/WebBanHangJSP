@@ -1,4 +1,4 @@
-package Filter;
+package filter;
 
 import java.io.IOException;
 import java.sql.Connection;
@@ -15,8 +15,8 @@ import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
 
-import DB.ConnectionUtils;
-import Utils.MyUtils;
+import db.ConnectionUtils;
+import utils.MyUtils;
 
 @WebFilter(filterName = "jdbcFilter", urlPatterns = { "/*" })
 public class JDBCFilter implements Filter {
@@ -76,10 +76,10 @@ public class JDBCFilter implements Filter {
 
        // Chỉ mở connection (kết nối) đối với các request có đường dẫn đặc biệt.
        // (Chẳng hạn đường dẫn tới các servlet, jsp, ..)
-       //
+       // 
        // Tránh tình trạng mở Connection với các yêu cầu thông thường.
        // (Chẳng hạn image, css, javascript,... )
-       //
+       // 
        if (this.needJDBC(req)) {
 
            System.out.println("Open Connection for: " + req.getServletPath());
@@ -115,7 +115,6 @@ public class JDBCFilter implements Filter {
            // (Đi tới Filter tiếp theo hoặc đi tới mục tiêu).
            chain.doFilter(request, response);
        }
-
 
    }
 

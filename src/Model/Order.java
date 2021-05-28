@@ -1,4 +1,4 @@
-package Model;
+package model;
 
 public class Order {
     private String orderID;
@@ -9,7 +9,7 @@ public class Order {
     private double totalMoney;
     private boolean status;
     private String createdDate;
-
+    
     public Order() {
     }
 
@@ -34,7 +34,15 @@ public class Order {
         this.createdDate = createdDate;
     }
 
-    public String getOrderID() {
+    public String getCreatedDate() {
+		return createdDate;
+	}
+
+	public void setCreatedDate(String createdDate) {
+		this.createdDate = createdDate;
+	}
+
+	public String getOrderID() {
         return orderID;
     }
 
@@ -88,13 +96,5 @@ public class Order {
 
     public void setStatus(boolean status) {
         this.status = status;
-    }
-
-    public String getCreatedDate() {
-        return createdDate;
-    }
-
-    public void setCreatedDate(String createdDate) {
-        this.createdDate = createdDate;
     }
 }

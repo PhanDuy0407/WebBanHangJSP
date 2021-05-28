@@ -1,4 +1,4 @@
-package Filter;
+package filter;
 
 import java.io.IOException;
 import java.sql.Connection;
@@ -14,9 +14,9 @@ import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
-import Model.UserAccount;
-import Utils.DBUtils;
-import Utils.MyUtils;
+import model.UserAccount;
+import utils.DBUtils;
+import utils.MyUtils;
  
 @WebFilter(filterName = "cookieFilter", urlPatterns = { "/*" })
 public class CookieFilter implements Filter {

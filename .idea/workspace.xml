@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="war-exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8d9a74ce-9e8f-49fe-a731-b7e4283afe14" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/test_war.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/test_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/jstl_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1_33.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jstl-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war/test_war.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/classes/DB/ConnectionUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/classes/DB/MySQLConnection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/classes/DB/SQLServerConnUtils_SQLJDBC.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/classes/Filter/AdminFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/classes/Filter/CookieFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/classes/Filter/JDBCFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/classes/Model/CartProduct.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/classes/Model/Category.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/classes/Model/Order.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/classes/Model/OrderProduct.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/classes/Model/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/classes/Model/UserAccount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/classes/Servlet/CartServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/classes/Servlet/CategoryServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/classes/Servlet/HomeServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/classes/Servlet/LoginServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/classes/Servlet/LogoutServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/classes/Servlet/OrderDetailServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/classes/Servlet/OrderHistoryServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/classes/Servlet/OrderServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/classes/Servlet/ProductListServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/classes/Servlet/ProductServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/classes/Servlet/RegisterServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/classes/Servlet/SearchServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/classes/Servlet/UserInfoServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/classes/Utils/DBUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/classes/Utils/MyUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/classes/admin/AdminCategoryServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/classes/admin/AdminLoginServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/classes/admin/AdminOrderDetailServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/classes/admin/AdminOrderServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/classes/admin/AdminProductServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/classes/admin/AdminUserServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/classes/admin/CreateCategoryServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/classes/admin/CreateProductServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/classes/admin/CreateUserServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/classes/admin/DeleteCategoryServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/classes/admin/DeleteProductServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/classes/admin/UpdateCategoryServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/classes/admin/UpdateOrderServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/classes/admin/UpdateProductServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/classes/admin/UpdateUserServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/lib/mysql-connector-java-5.1.33.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/views/admin/_createCategory.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/views/admin/_createProduct.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/views/admin/_createUser.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/views/admin/_listCategoryAdmin.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/views/admin/_listProductAdmin.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/views/admin/_listProductInOrder.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/views/admin/_listUser.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/views/admin/_navbar.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/views/admin/_updateCategory.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/views/admin/_updateProduct.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/views/admin/_updateUser.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/views/admin/adminOrderDetail.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/views/admin/adminOrderView.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/views/admin/adminProductView.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/views/admin/adminUserView.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/views/admin/loginView.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/views/client/_footer.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/views/client/_footer2.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/views/client/_header.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/views/client/_listC.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/views/client/_listP.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/views/client/_listProductInCart.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/views/client/_listProductInHome.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/views/client/_listProductInOrder.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/views/client/_menu.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/views/client/cartView.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/views/client/detailProduct.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/views/client/homeView.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/views/client/loginView.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/views/client/orderDetail.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/views/client/orderHistory.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/views/client/orderSuccess.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/views/client/orderView.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/views/client/productListView.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/views/client/registerView.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/views/client/userInfoView.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets-admin/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets-admin/fontawesome-free/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets-admin/fontawesome-free/css/all.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets-admin/fontawesome-free/css/all.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets-admin/fontawesome-free/css/brands.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets-admin/fontawesome-free/css/brands.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets-admin/fontawesome-free/css/fontawesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets-admin/fontawesome-free/css/fontawesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets-admin/fontawesome-free/css/regular.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets-admin/fontawesome-free/css/regular.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets-admin/fontawesome-free/css/solid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets-admin/fontawesome-free/css/solid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets-admin/fontawesome-free/css/svg-with-js.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets-admin/fontawesome-free/css/svg-with-js.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets-admin/fontawesome-free/css/v4-shims.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets-admin/fontawesome-free/css/v4-shims.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets-admin/fontawesome-free/webfonts/fa-brands-400.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets-admin/fontawesome-free/webfonts/fa-brands-400.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets-admin/fontawesome-free/webfonts/fa-brands-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets-admin/fontawesome-free/webfonts/fa-brands-400.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets-admin/fontawesome-free/webfonts/fa-brands-400.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets-admin/fontawesome-free/webfonts/fa-regular-400.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets-admin/fontawesome-free/webfonts/fa-regular-400.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets-admin/fontawesome-free/webfonts/fa-regular-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets-admin/fontawesome-free/webfonts/fa-regular-400.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets-admin/fontawesome-free/webfonts/fa-regular-400.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets-admin/fontawesome-free/webfonts/fa-solid-900.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets-admin/fontawesome-free/webfonts/fa-solid-900.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets-admin/fontawesome-free/webfonts/fa-solid-900.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets-admin/fontawesome-free/webfonts/fa-solid-900.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets-admin/fontawesome-free/webfonts/fa-solid-900.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets-admin/js/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets/css/cart-empty.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets/css/cart.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets/css/error_page.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets/css/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets/css/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets/css/payment.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets/css/product-detail.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets/css/product.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets/css/slideshow.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets/css/transaction-detail.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets/css/transaction.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets/css/user.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets/image/404.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets/image/add_to_cart.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets/image/done.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets/image/empty_cart.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets/image/error.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets/image/forgot_password.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets/image/loading1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets/image/loading2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets/image/loading3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets/image/loading4-crop.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets/image/loading4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets/image/loading5.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets/image/login.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets/image/logo-side.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets/image/logo-side1200_400px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets/image/logo-side180_60px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets/image/logo1200px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets/image/logo200px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets/image/no_data.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets/image/not_found.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets/image/order_confirmed.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets/image/payment.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets/image/personal_information.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets/image/product1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets/image/product2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets/image/product3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets/image/product4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets/image/sign_up.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets/image/slide1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets/image/slide2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets/image/slide3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets/image/subscribe.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets/image/successful_purchase.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets/image/wallet.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets/js/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets/js/payment.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets/js/payment2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets/js/product.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets/js/scrollToTop.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets/js/slideshow.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets/js/table.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/assets/js/validate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/test_war_exploded/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/DB/ConnectionUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/DB/MySQLConnection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/DB/SQLServerConnUtils_SQLJDBC.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/Filter/AdminFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/Filter/CookieFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/Filter/JDBCFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/Model/CartProduct.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/Model/Category.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/Model/Order.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/Model/OrderProduct.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/Model/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/Model/UserAccount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/Servlet/CartServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/Servlet/CategoryServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/Servlet/HomeServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/Servlet/LoginServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/Servlet/LogoutServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/Servlet/OrderDetailServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/Servlet/OrderHistoryServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/Servlet/OrderServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/Servlet/ProductListServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/Servlet/ProductServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/Servlet/RegisterServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/Servlet/SearchServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/Servlet/UserInfoServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/Utils/DBUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/Utils/MyUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/admin/AdminCategoryServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/admin/AdminLoginServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/admin/AdminOrderDetailServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/admin/AdminOrderServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/admin/AdminProductServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/admin/AdminUserServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/admin/CreateCategoryServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/admin/CreateProductServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/admin/CreateUserServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/admin/DeleteCategoryServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/admin/DeleteProductServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/admin/UpdateCategoryServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/admin/UpdateOrderServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/admin/UpdateProductServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/admin/UpdateUserServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DB/ConnectionUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DB/ConnectionUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DB/MySQLConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DB/MySQLConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DB/SQLServerConnUtils_SQLJDBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DB/SQLServerConnUtils_SQLJDBC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Filter/AdminFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Filter/AdminFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Filter/CookieFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Filter/CookieFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Filter/JDBCFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Filter/JDBCFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/CartProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/CartProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/OrderProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/OrderProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/UserAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/UserAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Servlet/CartServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Servlet/CategoryServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Servlet/HomeServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Servlet/LoginServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Servlet/LogoutServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Servlet/OrderDetailServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Servlet/OrderHistoryServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Servlet/OrderServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Servlet/ProductListServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Servlet/ProductServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Servlet/RegisterServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Servlet/SearchServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Servlet/UserInfoServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Utils/DBUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/DBUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Utils/MyUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/MyUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/admin/AdminCategoryServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/admin/AdminLoginServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/admin/AdminOrderDetailServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/admin/AdminOrderServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/admin/AdminProductServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/admin/AdminUserServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/admin/CreateCategoryServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/admin/CreateProductServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/admin/CreateUserServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/admin/DeleteCategoryServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/admin/DeleteProductServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/admin/UpdateCategoryServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/admin/UpdateOrderServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/admin/UpdateProductServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/admin/UpdateUserServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/admin/_createCategory.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/admin/_createCategory.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/admin/_createProduct.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/admin/_createProduct.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/admin/_createUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/admin/_createUser.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/admin/_listCategoryAdmin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/admin/_listCategoryAdmin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/admin/_listProductAdmin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/admin/_listProductAdmin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/admin/_listProductInOrder.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/admin/_listProductInOrder.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/admin/_listUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/admin/_listUser.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/admin/_navbar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/admin/_navbar.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/admin/_updateCategory.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/admin/_updateCategory.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/admin/_updateProduct.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/admin/_updateProduct.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/admin/_updateUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/admin/_updateUser.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/admin/adminOrderDetail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/admin/adminOrderDetail.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/admin/adminOrderView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/admin/adminOrderView.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/admin/adminProductView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/admin/adminProductView.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/admin/adminUserView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/admin/adminUserView.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/admin/loginView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/admin/loginView.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/client/_footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/client/_footer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/client/_footer2.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/client/_footer2.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/client/_header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/client/_header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/client/_listC.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/client/_listC.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/client/_listP.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/client/_listP.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/client/_listProductInCart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/client/_listProductInCart.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/client/_listProductInHome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/client/_listProductInHome.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/client/_listProductInOrder.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/client/_listProductInOrder.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/client/_menu.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/client/cartView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/client/cartView.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/client/detailProduct.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/client/detailProduct.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/client/homeView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/client/homeView.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/client/loginView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/client/loginView.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/client/orderDetail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/client/orderDetail.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/client/orderHistory.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/client/orderHistory.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/client/orderSuccess.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/client/orderSuccess.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/client/orderView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/client/orderView.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/client/productListView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/client/productListView.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/client/registerView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/client/registerView.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/client/userInfoView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/client/userInfoView.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets-admin/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets-admin/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets-admin/fontawesome-free/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets-admin/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets-admin/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/css/cart-empty.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/cart-empty.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/css/cart.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/cart.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/css/error_page.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/error_page.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/css/payment.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/payment.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/css/product-detail.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/product-detail.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/css/product.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/product.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/css/slideshow.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/slideshow.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/css/transaction-detail.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/transaction-detail.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/css/transaction.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/transaction.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/css/user.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/user.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/image/404.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/js/payment.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/payment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/js/payment2.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/payment2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/js/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/product.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/js/scrollToTop.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/scrollToTop.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/js/slideshow.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/slideshow.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/js/table.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/table.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectId" id="1tAmD1cqLGWPFnzrkKuRkkDct7R" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15429688" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 9.0.46" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.46" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="war-exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="b3cfc0d5-85d0-41ed-a651-f7ddeca4328d" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="52937" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="war-exploded" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8d9a74ce-9e8f-49fe-a731-b7e4283afe14" name="Default Changelist" comment="" />
+      <created>1622220153399</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1622220153399</updated>
+      <workItem from="1622220157952" duration="598000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

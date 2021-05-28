@@ -1,8 +1,8 @@
-package Filter;
+package filter;
 
-import Model.UserAccount;
-import Utils.DBUtils;
-import Utils.MyUtils;
+import model.UserAccount;
+import utils.DBUtils;
+import utils.MyUtils;
 
 import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
@@ -25,11 +25,15 @@ public class AdminFilter implements Filter {
 
         UserAccount userInSession = MyUtils.getLoginedUser(session);
 
+        if(req.getRequestURI().endsWith(".css")||req.getRequestURI().endsWith(".js")){
+            chain.doFilter(request,response);
+            return;
+        }
         if (userInSession != null && userInSession.isAdmin()) {
             chain.doFilter(request, response);
             return;
         }
-        resp.sendRedirect("/AdminLogin");
+        resp.sendRedirect(req.getContextPath() + "/AdminLogin");
     }
 
     public void init(FilterConfig config) throws ServletException {

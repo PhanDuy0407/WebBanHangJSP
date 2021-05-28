@@ -1,4 +1,4 @@
-package Utils;
+package utils;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -7,15 +7,19 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import Model.*;
-
-import DB.*;
+import db.ConnectionUtils;
+import model.CartProduct;
+import model.Category;
+import model.Order;
+import model.OrderProduct;
+import model.Product;
+import model.UserAccount;
 
 public class DBUtils {
 	static Connection conn = ConnectionUtils.getConnection();
-
+	
 	public static UserAccount findUser(Connection conn, //
-									   String userName, String password) throws SQLException {
+			String userName, String password) throws SQLException {
 
 		String sql = "Select * from Account " //
 				+ " where USER_NAME = ? and PASSWORD= ?";
@@ -27,10 +31,16 @@ public class DBUtils {
 
 		if (rs.next()) {
 			String userID = rs.getString("USER_ID");
+			String name = rs.getString("NAME");
+			String tel = rs.getString("PHONE_NUMBER");
+			String email = rs.getString("EMAIL");
 			UserAccount user = new UserAccount();
 			user.setUserID(userID);
 			user.setUserName(userName);
 			user.setPassword(password);
+			user.setName(name);
+			user.setEmail(email);
+			user.setTel(tel);
 			user.setAdmin(rs.getBoolean("IS_ADMIN"));
 			return user;
 		}
@@ -50,16 +60,61 @@ public class DBUtils {
 		if (rs.next()) {
 			String userID = rs.getString("USER_ID");
 			String password = rs.getString("Password");
+			String tel = rs.getString("PHONE_NUMBER");
+			String email = rs.getString("EMAIL");
+			String name = rs.getString("NAME");
 			boolean isAdmin = rs.getBoolean("IS_ADMIN");
 			UserAccount user = new UserAccount();
 			user.setUserID(userID);
 			user.setUserName(userName);
 			user.setPassword(password);
+			user.setName(name);
+			user.setEmail(email);
+			user.setTel(tel);
 			user.setAdmin(isAdmin);
 			return user;
 		}
 		return null;
 	}
+	
+	public static void updateUserInfo(Connection conn, String userID, String name, String tel, String email) {
+		String sql = "Update Account "
+				+ "Set NAME=?, PHONE_NUMBER=?, EMAIL=? "
+				+ "Where USER_ID = ?";
+
+		try {
+			PreparedStatement pstm = conn.prepareStatement(sql);
+
+			pstm.setString(1, name);
+			pstm.setString(2, tel);
+			pstm.setString(3, email);
+			pstm.setString(4, userID);
+
+			pstm.executeUpdate();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	public static void updatePass(Connection conn, String userID, String pass) {
+		String sql = "Update Account "
+				+ "Set PASSWORD=? "
+				+ "Where USER_ID = ?";
+
+		try {
+			PreparedStatement pstm = conn.prepareStatement(sql);
+
+			pstm.setString(1, pass);
+			pstm.setString(2, userID);
+
+			pstm.executeUpdate();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
 
 	public static List<Product> getAllProduct(Connection conn) {
 		String sql = "Select * from Product ";
@@ -244,6 +299,33 @@ public class DBUtils {
 		}
 		return null;
 	}
+	
+	public static CartProduct findCartProduct(Connection conn, String product_ID, String userID) {
+		String sql = "Select * from Cart,Product where Cart.PRODUCT_ID = Product.PRODUCT_ID and Product.PRODUCT_ID = ? and USER_ID = ?";
+
+		try {
+			PreparedStatement pstm = conn.prepareStatement(sql);
+			pstm.setString(1, product_ID);
+			pstm.setString(2, userID);
+
+			ResultSet rs = pstm.executeQuery();
+
+			if (rs.next()) {
+				String productID = rs.getString("PRODUCT_ID");
+				String name = rs.getString("Name");
+				String image = rs.getString("image");
+				String description = rs.getString("description");
+				float price = rs.getFloat("Price");
+				float sale = rs.getFloat("sale");
+				int available = rs.getInt("available");
+				int number = rs.getInt("Number");
+				return new CartProduct(productID, name, image, description, price, sale, available, number);
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
 
 	public static void insertToCart(Connection conn, String userID, String productID) {
 		String sql = "Insert into Cart(USER_ID, PRODUCT_ID, NUMBER) values (?,?,?)";
@@ -254,6 +336,23 @@ public class DBUtils {
 			pstm.setString(1, userID);
 			pstm.setString(2, productID);
 			pstm.setString(3, "1");
+
+			pstm.executeUpdate();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	public static void insertToCart(Connection conn, String userID, String productID, String num) {
+		String sql = "Insert into Cart(USER_ID, PRODUCT_ID, NUMBER) values (?,?,?)";
+
+		try {
+			PreparedStatement pstm = conn.prepareStatement(sql);
+
+			pstm.setString(1, userID);
+			pstm.setString(2, productID);
+			pstm.setString(3, num);
 
 			pstm.executeUpdate();
 		} catch (SQLException e) {
@@ -277,7 +376,7 @@ public class DBUtils {
 			e.printStackTrace();
 		}
 	}
-
+	
 	public static void cleanCart(Connection conn, String userID){
 		String sql = "Delete From Cart Where USER_ID = ?";
 
@@ -291,7 +390,7 @@ public class DBUtils {
 			e.printStackTrace();
 		}
 	}
-
+	
 	public static void updateNumberCartProduct(Connection conn, String userID, String productID, int number) {
 		String sql = "Update Cart Set Number=? Where USER_ID = ? AND PRODUCT_ID = ?";
 
@@ -323,9 +422,14 @@ public class DBUtils {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
+		
 	}
 
+	public static void insertProduct(Connection conn, Product product) {
+		
+	}
+
+	
 	public static List<Order> getAllOrder(Connection conn){
 		String sql = "SELECT * FROM order_detail ";
 		List<Order> listOrders = new ArrayList<Order>();
@@ -357,18 +461,18 @@ public class DBUtils {
 
 
 	public static void insertOrder(Connection conn, Order order){
-		String sql = "INSERT INTO order_detail VALUES (?,?,?,?,?,?,?,now())";
-
+//		String sql = "INSERT INTO order_detail VALUES (?,?,?,?,?,?,?)";
+		String sql = "INSERT INTO order_detail(NAME, PHONE_NUMBER, ADDRESS, TOTAL_MONEY, USER_ID, STATUS) VALUES (?,?,?,?,?,?)";
 		try {
 			PreparedStatement pstm = conn.prepareStatement(sql);
 
-			pstm.setString(1,order.getOrderID());
-			pstm.setString(2,order.getFullName());
-			pstm.setString(3,order.getPhoneNumber());
-			pstm.setString(4,order.getAddress());
-			pstm.setDouble(5,order.getTotalMoney());
-			pstm.setString(6,order.getUserID());
-			pstm.setInt(7,0);
+//			pstm.setString(1,order.getOrderID());
+			pstm.setString(1,order.getFullName());
+			pstm.setString(2,order.getPhoneNumber());
+			pstm.setString(3,order.getAddress());
+			pstm.setDouble(4,order.getTotalMoney());
+			pstm.setString(5,order.getUserID());
+			pstm.setInt(6,0);
 			pstm.executeUpdate();
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -396,9 +500,9 @@ public class DBUtils {
 				if(rs.getInt("STATUS") == 1){
 					status = true;
 				}
+				
 				String date = MyUtils.FormatDate(rs.getString("CREATED_DATE"));
-
-				return new Order(orderID,userID,name,phoneNumber,address,totalMoney,status,date);
+				return new Order(orderID,userID,name,phoneNumber,address,totalMoney,status, date);
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -406,8 +510,7 @@ public class DBUtils {
 		return null;
 	}
 
-
-	public static List<Order> findOrderByUserID(String id) {
+	public static List<Order> findOrderByUserID(String id){
 		String sql = "Select * from order_detail where USER_ID=?";
 		List<Order> list = new ArrayList<Order>();
 
@@ -425,18 +528,19 @@ public class DBUtils {
 				double totalMoney = rs.getDouble("TOTAL_MONEY");
 				String userID = rs.getString("USER_ID");
 				boolean status = false;
-				if (rs.getInt("STATUS") == 1) {
+				if(rs.getInt("STATUS") == 1){
 					status = true;
 				}
-				String date = MyUtils.FormatDate(rs.getString("CREATED_DATE"));
 
-				list.add(new Order(orderID, userID, name, phoneNumber, address, totalMoney, status, date));
+				String date = MyUtils.FormatDate(rs.getString("CREATED_DATE"));
+				list.add(new Order(orderID,userID,name,phoneNumber,address,totalMoney,status, date));
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
 		return list;
 	}
+
 
 	public static void changeOrderInfo(Order order){
 		String sql = "Update order_detail Set STATUS=? Where ORDER_ID=?";
@@ -468,7 +572,13 @@ public class DBUtils {
 	}
 
 	public static List<CartProduct> getProductByOrderID(String id){
-		String sql = "SELECT product.NAME,product.IMAGE,product.PRICE,product.SALE,order_product.NUMBER FROM order_product JOIN product JOIN order_detail WHERE order_detail.ORDER_ID = order_product.ORDER_ID AND order_product.PRODUCT_ID = product.PRODUCT_ID and order_detail.ORDER_ID = ?";
+//		String sql = "SELECT product.NAME,product.IMAGE,product.PRICE,product.SALE,order_product.NUMBER "
+//				+ "FROM order_product JOIN product on order_product.JOIN order_detail "
+//				+ "WHERE order_detail.ORDER_ID = order_product.ORDER_ID AND order_product.PRODUCT_ID = product.PRODUCT_ID and order_detail.ORDER_ID = ?";
+		
+		String sql = "SELECT product.PRODUCT_ID, product.NAME,product.IMAGE,product.PRICE,product.SALE,order_product.NUMBER "
+		+ "FROM order_product, product, order_detail "
+		+ "WHERE order_detail.ORDER_ID = order_product.ORDER_ID AND order_product.PRODUCT_ID = product.PRODUCT_ID and order_detail.ORDER_ID = ?";
 		List<CartProduct> listProduct = new ArrayList<CartProduct>();
 		try {
 			PreparedStatement pstm = conn.prepareStatement(sql);
@@ -476,6 +586,7 @@ public class DBUtils {
 			ResultSet rs = pstm.executeQuery();
 			while (rs.next()){
 				CartProduct product = new CartProduct();
+				product.setProductID(rs.getString("PRODUCT_ID"));
 				product.setName(rs.getString("NAME"));
 				product.setImage(rs.getString("IMAGE"));
 				product.setPrice(rs.getFloat("PRICE"));
@@ -633,7 +744,9 @@ public class DBUtils {
 				String name = rs.getString(2);
 				String userName = rs.getString(3);
 				String password = rs.getString(4);
-				UserAccount user = new UserAccount(userID,name,userName,password);
+				String tel = rs.getString("PHONE_NUMBER");
+				String email = rs.getString("EMAIL");
+				UserAccount user = new UserAccount(userID,name,userName,password, tel, email);
 				accounts.add(user);
 			}
 		} catch (SQLException e) {
@@ -679,14 +792,14 @@ public class DBUtils {
 	}
 
 	public static void insertUser(Connection conn, UserAccount user){
-		String sql = "INSERT INTO account(USER_ID,NAME,USER_NAME,PASSWORD) VALUES (?,?,?,?)";
-
+//		String sql = "INSERT INTO account(USER_ID,NAME,USER_NAME,PASSWORD) VALUES (?,?,?,?)";
+		String sql = "INSERT INTO account(USER_NAME,PASSWORD) VALUES (?,?)";
 		try {
 			PreparedStatement pstm = conn.prepareStatement(sql);
-			pstm.setString(1, user.getUserID());
-			pstm.setString(2,user.getName());
-			pstm.setString(3, user.getUserName());
-			pstm.setString(4, user.getPassword());
+//			pstm.setString(1, user.getUserID());
+//			pstm.setString(2,user.getName());
+			pstm.setString(1, user.getUserName());
+			pstm.setString(2, user.getPassword());
 
 			if(pstm.executeUpdate()>0){
 				System.out.println("Success");
@@ -769,6 +882,7 @@ public class DBUtils {
 
 	public static String getNextOrderID(Connection conn){
 		String sql = "SELECT ORDER_ID FROM order_detail order by ORDER_ID Desc limit 1";
+//		String sql = "SELECT top 1 ORDER_ID FROM order_detail order by ORDER_ID Desc";
 		String result = "1";
 
 		try {
@@ -783,4 +897,5 @@ public class DBUtils {
 
 		return result;
 	}
+
 }
